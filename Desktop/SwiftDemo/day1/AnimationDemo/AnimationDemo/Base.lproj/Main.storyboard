@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKd-Ze-bXj">
+                                <rect key="frame" x="30" y="537" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="T5c-lV-fUu"/>
+                                    <constraint firstAttribute="height" constant="50" id="dda-ZH-5LF"/>
+                                </constraints>
+                                <state key="normal" image="guanbi.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMh-Vj-bZ7">
+                                <rect key="frame" x="295" y="537" width="50" height="50"/>
+                                <state key="normal" image="guanbi.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ska-fh-4ux">
+                                <rect key="frame" x="147.5" y="120" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.16078431369999999" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="7pb-Oy-HtS"/>
+                                    <constraint firstAttribute="height" constant="80" id="qTf-D5-gN9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="testDemoBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nrZ-sq-x23"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nKd-Ze-bXj" secondAttribute="bottom" constant="80" id="6Dc-AY-h4u"/>
+                            <constraint firstItem="cMh-Vj-bZ7" firstAttribute="bottom" secondItem="nKd-Ze-bXj" secondAttribute="bottom" id="EBX-Iu-lQZ"/>
+                            <constraint firstItem="nKd-Ze-bXj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="VCp-KY-vlv"/>
+                            <constraint firstItem="ska-fh-4ux" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Vic-fZ-zxh"/>
+                            <constraint firstItem="cMh-Vj-bZ7" firstAttribute="height" secondItem="nKd-Ze-bXj" secondAttribute="height" id="WGO-rq-iGR"/>
+                            <constraint firstItem="cMh-Vj-bZ7" firstAttribute="width" secondItem="nKd-Ze-bXj" secondAttribute="width" id="gCZ-7J-GbC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cMh-Vj-bZ7" secondAttribute="trailing" constant="30" id="tu6-TM-g1r"/>
+                            <constraint firstItem="ska-fh-4ux" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJO-F3-P40"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="leftBtn" destination="nKd-Ze-bXj" id="6rD-eH-bMJ"/>
+                        <outlet property="rightBtn" destination="cMh-Vj-bZ7" id="Ne1-pm-1Tf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="guanbi.png" width="180" height="180"/>
+    </resources>
+</document>
